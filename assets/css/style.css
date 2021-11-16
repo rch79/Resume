@@ -22,7 +22,32 @@
 .ui-menu-color-download {
     background-color: #525252;
 }
+
+/*-----------------------------------------Special paddings / margins / text */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
 /*------------------------------------------------------------------Heading */
+
 header {
     margin: 0;
 }
@@ -30,6 +55,7 @@ header {
 .heading {
     margin-left: 50px;
 }
+
 .logo {
     background-image: url("../images/profile_pic.jpg");
     background-position: center;
@@ -46,7 +72,7 @@ header {
     font-weight: 100;
     font: size 46px;
     margin-top: 50px;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .title {
@@ -65,6 +91,7 @@ header {
 .no-padding {
     padding-left: 0;
 }
+
 /* CSS trick to close the 1px gap between menu items */
 .menucontainer {
     font-size: 0;
@@ -80,13 +107,15 @@ header {
 }
 
 .menuitem {
-    height: 120px;      /*roughly a third of the height of the section */
+    height: 120px;
+    /*roughly a third of the height of the section */
     text-align: center;
     padding: 0;
 }
 
 .menuitem a {
-    width: 100%;    /*make entire menu item rectangle clickable */
+    width: 100%;
+    /*make entire menu item rectangle clickable */
     text-decoration: none;
     color: #ffff;
     height: 120px;
@@ -94,7 +123,8 @@ header {
 
 .menuitem a i {
     padding-top: 22px;
-    display: block;     /*FA icon will appear on a line of its own */
+    display: block;
+    /*FA icon will appear on a line of its own */
     color: #fafafa;
     font-size: 26px;
 }
@@ -115,4 +145,55 @@ header {
 .hvr-sweep-to-bottom:before {
     background-color: rgba(0, 0, 0, 0.2);
     height: 120px;
+}
+
+/*------------------------------------------------------------------Footer */
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;      /* default height is 120px, but it can grow beyond that */
+    margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;          /* transition should go in the parent element instead of the hover */
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #e84610;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%; /* 50% border radius on a square will give you a circle */
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;          /* transition should go in the parent element instead of the hover */
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+    padding: 20px;
 }
